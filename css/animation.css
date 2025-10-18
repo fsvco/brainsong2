@@ -1,0 +1,67 @@
+.vitaminAnimation{
+	position: absolute;
+    right: 325px;
+    top: 226px;
+}
+.circle1, .circle2, .circle3{
+	position: absolute;
+	height: 70px;
+	width: 70px;
+	left: 50%;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%);
+	-ms-transform: translateY(-50%) translateX(-50%);
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	}
+.circle1{
+	opacity: .7;
+	}	
+.circle2 {
+	box-shadow: inset 0 0 10px #ddd;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	-webkit-animation: circle2 3s linear 1.5s infinite;
+	animation: circle2 3s linear 1.5s infinite
+	}
+.circle3 {
+	box-shadow: inset 0 0 10px #ddd;
+	border: 2px solid #ddd;
+	border-radius: 50%;
+	-webkit-animation: circle3 3s linear 0s infinite;
+	animation: circle3 3s linear 0s infinite
+	}
+.circle2-b{box-shadow: inset 0 0 10px #fff;border: 2px solid #fff;}
+.circle3-b{box-shadow: inset 0 0 10px #fff;border: 2px solid #fff;}
+	
+@-webkit-keyframes circle2 {
+0% {height:70px;width:70px}
+100% {height:250px;width:250px;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0}
+}
+
+@keyframes circle2 {
+0% {height:70px;width:70px}
+100% {height:250px;width:250px;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0}
+}
+
+
+@-webkit-keyframes circle3 {
+0% {height:70px;width:70px}
+100% {height:250px;width:250px;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0}
+}
+
+@keyframes circle3 {
+0% {height:70px;width:70px}
+100% {height:250px;width:250px;filter:alpha(opacity=0);-moz-opacity:0;-khtml-opacity:0;opacity:0}
+}
+@media only screen and (max-width: 1000px){
+.vitaminAnimation{
+    right: 205px;
+    top: 144px;
+}	
+}
+@media only screen and (max-width: 767px){
+.vitaminAnimation{
+    right: 196px;
+    top: 130px;
+}	
+}
